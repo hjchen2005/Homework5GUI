@@ -189,27 +189,7 @@ public final class GuessingGameGUI implements IClient, IGuesser, ActionListener 
 		guessLabel.setFont(new Font("Arial", Font.BOLD, 18));
 		guessLabel.setOpaque(true);
 	}
-	//public class FillCircle extends Frame {
-		 
-	//	  public void paint(Graphics g) {
-	//	     Graphics2D ga = (Graphics2D)g;
-	//	     ga.setPaint(Color.red);
-	//	     ga.fillOval(150,150,100,100);
-	//	  }
-		   
-/*	@SuppressWarnings("serial")
-	public class FillCircle extends Frame {
-		 
-		  public void paint(Graphics g) {
-		     Graphics2D ga = (Graphics2D)g;
-		     ga.setPaint(Color.red);
-		     ga.fillOval(150,150,100,100);
-		     //JButton zero = new JButton("0");
-				ga.setActionCommand("0");
-				ga.addActionListener((ActionListener) this);
 
-		  }*/
-	//}
 	
 	public void setupNumberPad()
 	{
@@ -251,7 +231,6 @@ public final class GuessingGameGUI implements IClient, IGuesser, ActionListener 
 		setupLabels();
 		setupNumberPad();
 		setupSubmitPanel();
-		setupColor();
 
 		// Forces the main label to the left.
 		JPanel labelLefter = new JPanel();
@@ -269,8 +248,5 @@ public final class GuessingGameGUI implements IClient, IGuesser, ActionListener 
 		// TODO Auto-generated method stub
 		
 	}//}
-private void setupColor() {
-		// TODO Auto-generated method stub
-		
-	}
+
   }
