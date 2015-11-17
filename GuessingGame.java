@@ -39,28 +39,6 @@ public final class GuessingGameGUI implements IClient, IGuesser, ActionListener 
 		this.config = config;
 		this.semaphore.acquire();
 	}
-
-	/*
-	// Example of explicit event:
-	static public class WinEvent implements Runnable
-	{
-		JLabel label;
-		JButton submit;
-		
-		public WinEvent(JLabel label, JButton submit)
-		{
-			this.label = label;
-			this.submit = submit;
-		}
-		
-		public void run()
-		{
-			label.setText("You Win!");
-			submit.setText("Cool");
-			submit.setActionCommand("quit");
-		}
-	}
-	*/
 	
 	public void win()
 	{
@@ -74,7 +52,6 @@ public final class GuessingGameGUI implements IClient, IGuesser, ActionListener 
 				submitButton.setText("Cool");
 				Audio.music('w');
 				JOptionPane.showMessageDialog(null, "Congrats, you win!");
-				//Audio.music('w');
 				submitButton.setActionCommand("quit");
 			}
 		});
@@ -89,7 +66,6 @@ public final class GuessingGameGUI implements IClient, IGuesser, ActionListener 
 				submitButton.setText("Shucks");
 				Audio.music('l');
 				JOptionPane.showMessageDialog(null, "Sorry, next time!");
-				//Audio.music('l');
 				submitButton.setActionCommand("quit");
 			}
 		});
